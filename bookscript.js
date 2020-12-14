@@ -14,7 +14,7 @@ class BookManager {
       name: name,
       genre: genre,
       author: author,
-      img: img
+      img: img,
     };
 
     this.books.push(newbook); // push the newly created book to the books array
@@ -56,7 +56,7 @@ const createBookHtml = (id, name, genre, author, img) => {
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">${name} - by ${author}</h5>
-                                <p class="card-text"><img src="./../images/${img}"></p>
+                                <p class="card-text"><img src="./images/${img}"></p>
                             </div>
                         </div>
                     </div>`;
