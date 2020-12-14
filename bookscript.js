@@ -14,7 +14,7 @@ class BookManager {
       name: name,
       genre: genre,
       author: author,
-      img: img,
+      img: img
     };
 
     this.books.push(newbook); // push the newly created book to the books array
