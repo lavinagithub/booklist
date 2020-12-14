@@ -46,25 +46,27 @@ class BookManager {
     bookListDiv.innerHTML = booksHtmlList;
   }
 }
+
 //function expression to return the HTML code of a book div display
 const createBookHtml = (id, name, genre, author, img) => {
   return `<div class="book col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <div class="card-header">
-                                ${name} - ${author}
+                                Genre: ${genre}
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">${genre}</h5>
-                                <p class="card-text">${img}</p>
+                                <h5 class="card-title">${name} - by ${author}</h5>
+                                <p class="card-text"><img src="./images/${img}"</p>
                             </div>
                         </div>
                     </div>`;
 };
+
 //outside the class, create an instance of BookManager
 const bookList = new BookManager();
 
-bookList.addBook("The Alchemist", "Life", "Paulo Coelho", "");
-bookList.addBook("Time to Play", "Children's Book", "Bluey", "");
+bookList.addBook("The Alchemist", "Life", "Paulo Coelho", "alchemist.jpg");
+bookList.addBook("Time to Play", "Children's Book", "Bluey", "bluey.jpg");
 
 // Call the displayBook function
 bookList.displayBook();
