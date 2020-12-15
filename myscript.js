@@ -6,9 +6,9 @@ class BookManager {
   addBook() {}
 
   // function to display the book on the browser
-  displayBook() {}
-}
+  displayBooks() {}
+} // end class
 
 //outside the class, create an instance of BookManager
-
+const bookList = new BookManager();
 // Call the displayBook function
